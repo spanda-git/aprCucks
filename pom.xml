@@ -74,13 +74,13 @@
 			<version>3.17</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>6.14.2</version>
-			<scope>test</scope>
-		</dependency>
 		
+		
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>3.0.6</version>
+		</dependency>
 		
 
 		<dependency>
