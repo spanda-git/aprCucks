@@ -1,37 +1,37 @@
-04-09-2020 21:28:33 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:16) - ******STARTING OF SCENARIO-Login to SSS Application******
-04-09-2020 21:28:33 INFO  [main] utils.DataDriver.ConfigFileReader.ConfigReader(ConfigFileReader.java:23) - Loading Configuration Propeties file..
-04-09-2020 21:28:33 INFO  [main] mercy.base.Architecture.startDriverEngine(Architecture.java:38) - Initializing [chrome] driver server..
-04-09-2020 21:28:45 INFO  [main] stepDefinations.stepDefs.Login.user_launches_application(Login.java:17) - step starts
-04-09-2020 21:28:45 INFO  [main] utils.common.WebUtils.launchURL(WebUtils.java:23) - Launching Application url-https://ui.freecrm.com
-04-09-2020 21:28:55 INFO  [main] pageObjects.LoginPage_POM.launchApp(LoginPage_POM.java:28) - Logging into app
-04-09-2020 21:28:58 ERROR [main] stepDefinations.stepDefs.Login.veryify_home_page_displayed(Login.java:26) - page not displayed
-04-09-2020 21:28:58 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:28) - $$$$$$ENDING OF SCENARIO-[STATUS:FAILED]$$$$$$
-04-09-2020 21:28:58 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:16) - ******STARTING OF SCENARIO-Login Creds******
-04-09-2020 21:28:59 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:30) - Enter data [Satyajit] in [[ChromeDriver: chrome on WINDOWS (ec6aa46bcfacef22ba72b5e20e25fb51)] -> name: email]
-04-09-2020 21:28:59 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:30) - Enter data [demo] in [[ChromeDriver: chrome on WINDOWS (ec6aa46bcfacef22ba72b5e20e25fb51)] -> name: password]
-04-09-2020 21:28:59 INFO  [main] utils.common.WebUtils.click(WebUtils.java:43) - clicked on-[[ChromeDriver: chrome on WINDOWS (ec6aa46bcfacef22ba72b5e20e25fb51)] -> xpath: //div[text()='Login']]
-04-09-2020 21:28:59 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:28) - $$$$$$ENDING OF SCENARIO-[STATUS:PASSED]$$$$$$
-04-09-2020 21:28:59 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:16) - ******STARTING OF SCENARIO-Login to SSS Application fdfsdfdsf******
-04-09-2020 21:28:59 INFO  [main] stepDefinations.stepDefs.Login.user_launches_application(Login.java:17) - step starts
-04-09-2020 21:28:59 INFO  [main] utils.common.WebUtils.launchURL(WebUtils.java:23) - Launching Application url-https://ui.freecrm.com
-04-09-2020 21:29:09 INFO  [main] pageObjects.LoginPage_POM.launchApp(LoginPage_POM.java:28) - Logging into app
-04-09-2020 21:29:09 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:28) - $$$$$$ENDING OF SCENARIO-[STATUS:PASSED]$$$$$$
-04-09-2020 21:29:09 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:16) - ******STARTING OF SCENARIO-Login Creds	fdsfdsfds******
-04-09-2020 21:29:09 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:30) - Enter data [Satyajit] in [[ChromeDriver: chrome on WINDOWS (ec6aa46bcfacef22ba72b5e20e25fb51)] -> name: email]
-04-09-2020 21:29:09 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:30) - Enter data [demo] in [[ChromeDriver: chrome on WINDOWS (ec6aa46bcfacef22ba72b5e20e25fb51)] -> name: password]
-04-09-2020 21:29:09 INFO  [main] utils.common.WebUtils.click(WebUtils.java:43) - clicked on-[[ChromeDriver: chrome on WINDOWS (ec6aa46bcfacef22ba72b5e20e25fb51)] -> xpath: //div[text()='Login']]
-04-09-2020 21:29:09 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:28) - $$$$$$ENDING OF SCENARIO-[STATUS:PASSED]$$$$$$
-04-09-2020 21:29:09 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:16) - ******STARTING OF SCENARIO-Login to SSS Applicationgfgfg******
-04-09-2020 21:29:09 INFO  [main] stepDefinations.stepDefs.Login.user_launches_application(Login.java:17) - step starts
-04-09-2020 21:29:09 INFO  [main] utils.common.WebUtils.launchURL(WebUtils.java:23) - Launching Application url-https://ui.freecrm.com
-04-09-2020 21:29:20 INFO  [main] pageObjects.LoginPage_POM.launchApp(LoginPage_POM.java:28) - Logging into app
-04-09-2020 21:29:20 ERROR [main] stepDefinations.stepDefs.Login.veryify_home_page_displayed(Login.java:26) - page not displayed
-04-09-2020 21:29:20 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:28) - $$$$$$ENDING OF SCENARIO-[STATUS:FAILED]$$$$$$
-04-09-2020 21:29:20 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:16) - ******STARTING OF SCENARIO-Login Credsgfgfd******
-04-09-2020 21:29:20 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:30) - Enter data [Satyajit] in [[ChromeDriver: chrome on WINDOWS (ec6aa46bcfacef22ba72b5e20e25fb51)] -> name: email]
-04-09-2020 21:29:20 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:30) - Enter data [demo] in [[ChromeDriver: chrome on WINDOWS (ec6aa46bcfacef22ba72b5e20e25fb51)] -> name: password]
-04-09-2020 21:29:20 INFO  [main] utils.common.WebUtils.click(WebUtils.java:43) - clicked on-[[ChromeDriver: chrome on WINDOWS (ec6aa46bcfacef22ba72b5e20e25fb51)] -> xpath: //div[text()='Login']]
-04-09-2020 21:29:20 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:28) - $$$$$$ENDING OF SCENARIO-[STATUS:PASSED]$$$$$$
-04-09-2020 21:29:20 INFO  [main] mercy.base.Architecture.reportGeneration(Architecture.java:73) - Loading Extend Report Configuration...
-04-09-2020 21:29:21 INFO  [main] mercy.base.Architecture.reportGeneration(Architecture.java:85) - Generated HTML report in test-output folder
-04-09-2020 21:29:21 INFO  [main] mercy.base.Architecture.tearDown(Architecture.java:64) - Closed all driver processes
+04-10-2020 00:09:01 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:16) - ******STARTING OF SCENARIO-Login to SSS Application******
+04-10-2020 00:09:02 INFO  [main] utils.DataDriver.ConfigFileReader.ConfigReader(ConfigFileReader.java:23) - Loading Configuration Propeties file..
+04-10-2020 00:09:02 INFO  [main] mercy.base.Architecture.startDriverEngine(Architecture.java:38) - Initializing [chrome] driver server..
+04-10-2020 00:09:26 INFO  [main] stepDefinations.stepDefs.Login.user_launches_application(Login.java:17) - step starts
+04-10-2020 00:09:26 INFO  [main] utils.common.WebUtils.launchURL(WebUtils.java:22) - Launching Application url-https://ui.freecrm.com
+04-10-2020 00:09:36 INFO  [main] pageObjects.LoginPage_POM.launchApp(LoginPage_POM.java:28) - Logging into app
+04-10-2020 00:09:36 ERROR [main] stepDefinations.stepDefs.Login.veryify_home_page_displayed(Login.java:26) - page not displayed
+04-10-2020 00:09:37 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:28) - $$$$$$ENDING OF SCENARIO-[STATUS:FAILED]$$$$$$
+04-10-2020 00:09:37 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:16) - ******STARTING OF SCENARIO-Login Creds******
+04-10-2020 00:09:38 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:29) - Enter data [Satyajit] in [[ChromeDriver: chrome on WINDOWS (60554434a385981dd9ba456175e72f15)] -> name: email]
+04-10-2020 00:09:38 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:29) - Enter data [demo] in [[ChromeDriver: chrome on WINDOWS (60554434a385981dd9ba456175e72f15)] -> name: password]
+04-10-2020 00:09:39 INFO  [main] utils.common.WebUtils.click(WebUtils.java:42) - clicked on-[[ChromeDriver: chrome on WINDOWS (60554434a385981dd9ba456175e72f15)] -> xpath: //div[text()='Login']]
+04-10-2020 00:09:39 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:28) - $$$$$$ENDING OF SCENARIO-[STATUS:PASSED]$$$$$$
+04-10-2020 00:09:39 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:16) - ******STARTING OF SCENARIO-Login to SSS Application fdfsdfdsf******
+04-10-2020 00:09:39 INFO  [main] stepDefinations.stepDefs.Login.user_launches_application(Login.java:17) - step starts
+04-10-2020 00:09:39 INFO  [main] utils.common.WebUtils.launchURL(WebUtils.java:22) - Launching Application url-https://ui.freecrm.com
+04-10-2020 00:09:49 INFO  [main] pageObjects.LoginPage_POM.launchApp(LoginPage_POM.java:28) - Logging into app
+04-10-2020 00:09:49 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:28) - $$$$$$ENDING OF SCENARIO-[STATUS:PASSED]$$$$$$
+04-10-2020 00:09:49 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:16) - ******STARTING OF SCENARIO-Login Creds	fdsfdsfds******
+04-10-2020 00:09:49 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:29) - Enter data [Satyajit] in [[ChromeDriver: chrome on WINDOWS (60554434a385981dd9ba456175e72f15)] -> name: email]
+04-10-2020 00:09:49 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:29) - Enter data [demo] in [[ChromeDriver: chrome on WINDOWS (60554434a385981dd9ba456175e72f15)] -> name: password]
+04-10-2020 00:09:49 INFO  [main] utils.common.WebUtils.click(WebUtils.java:42) - clicked on-[[ChromeDriver: chrome on WINDOWS (60554434a385981dd9ba456175e72f15)] -> xpath: //div[text()='Login']]
+04-10-2020 00:09:49 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:28) - $$$$$$ENDING OF SCENARIO-[STATUS:PASSED]$$$$$$
+04-10-2020 00:09:49 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:16) - ******STARTING OF SCENARIO-Login to SSS Applicationgfgfg******
+04-10-2020 00:09:49 INFO  [main] stepDefinations.stepDefs.Login.user_launches_application(Login.java:17) - step starts
+04-10-2020 00:09:49 INFO  [main] utils.common.WebUtils.launchURL(WebUtils.java:22) - Launching Application url-https://ui.freecrm.com
+04-10-2020 00:09:59 INFO  [main] pageObjects.LoginPage_POM.launchApp(LoginPage_POM.java:28) - Logging into app
+04-10-2020 00:09:59 ERROR [main] stepDefinations.stepDefs.Login.veryify_home_page_displayed(Login.java:26) - page not displayed
+04-10-2020 00:10:00 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:28) - $$$$$$ENDING OF SCENARIO-[STATUS:FAILED]$$$$$$
+04-10-2020 00:10:00 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:16) - ******STARTING OF SCENARIO-Login Credsgfgfd******
+04-10-2020 00:10:00 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:29) - Enter data [Satyajit] in [[ChromeDriver: chrome on WINDOWS (60554434a385981dd9ba456175e72f15)] -> name: email]
+04-10-2020 00:10:00 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:29) - Enter data [demo] in [[ChromeDriver: chrome on WINDOWS (60554434a385981dd9ba456175e72f15)] -> name: password]
+04-10-2020 00:10:00 INFO  [main] utils.common.WebUtils.click(WebUtils.java:42) - clicked on-[[ChromeDriver: chrome on WINDOWS (60554434a385981dd9ba456175e72f15)] -> xpath: //div[text()='Login']]
+04-10-2020 00:10:00 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:28) - $$$$$$ENDING OF SCENARIO-[STATUS:PASSED]$$$$$$
+04-10-2020 00:10:00 INFO  [main] mercy.base.Architecture.reportGeneration(Architecture.java:73) - Loading Extend Report Configuration...
+04-10-2020 00:10:02 INFO  [main] mercy.base.Architecture.reportGeneration(Architecture.java:85) - Generated HTML report in test-output folder
+04-10-2020 00:10:03 INFO  [main] mercy.base.Architecture.tearDown(Architecture.java:64) - Closed all driver processes
