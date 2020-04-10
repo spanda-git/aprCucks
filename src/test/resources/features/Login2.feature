@@ -1,11 +1,11 @@
-@Author=Satyajit.panda 
-Feature: Login to Application
-This feature is for login related scenariosgfdgfdg
+@Author=KOUSHIK
+Feature: Feature2
+This feature is for random test
 
 
-Scenario: Login to SSS Application fdfsdfdsf
+Scenario: Scenario1
 	Given User launches application 
 	Then just click on nothing 
 	
-Scenario: Login Creds	fdsfdsfds
+Scenario: Scenario2
 	Then user enters User name and password

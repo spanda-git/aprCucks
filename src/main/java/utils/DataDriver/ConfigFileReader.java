@@ -8,7 +8,6 @@ import utils.ReportLogManager.LogHelper;
 
 public class ConfigFileReader {
 	private static final Logger l = LogHelper.getLogger(Login.class);
-
 	private static Properties prop;
 	private static final String propertyFilePath = ".\\src\\test\\resources\\configFiles\\Config.properties";
 

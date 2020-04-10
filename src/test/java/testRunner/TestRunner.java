@@ -2,10 +2,11 @@ package testRunner;
 
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
+
+import base.Architecture;
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
 import cucumber.api.junit.Cucumber;
-import mercy.base.Architecture ;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features", glue = {
@@ -17,6 +18,7 @@ public class TestRunner {
 	@AfterClass
 	public static void tearDown() {
 		new Architecture().reportGeneration();
-		new Architecture().tearDown();
+		new Architecture().closeDriver();
+		new Architecture().popupReport();
 	}
 }

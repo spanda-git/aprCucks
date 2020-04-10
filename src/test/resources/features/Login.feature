@@ -1,11 +1,12 @@
 @Author=Satyajit
-Feature: Login to Applicationdsdsd 
+Feature: Feature1
 This feature is for login related scenarios
 
-Scenario: Login to SSS Application 
+Scenario: first scenario
 	Given User launches application 
 	And veryify home page displayed
 	Then just click on nothing 
 	
-Scenario: Login Creds	
+Scenario: second scenario
 	Then user enters User name and password
+	Then user closes driver

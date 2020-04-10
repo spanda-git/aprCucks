@@ -6,17 +6,15 @@ import java.util.Date;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.io.FileHandler;
 
-import mercy.base.Architecture;
+import base.Architecture;
 import utils.ReportLogManager.LogHelper;
 
-public class WebUtils {
-	private static Logger l = LogHelper.getLogger(Architecture.class);
-	private WebDriver driver = Architecture.driver;
-
+public class WebUtils extends Architecture{
+	private Logger l = LogHelper.getLogger(Architecture.class);
+	
 	public void launchURL(String url) {
 		driver.get(url);
 		l.info("Launching Application url-" + url);

@@ -1,7 +1,6 @@
 package stepDefinations.stepDefs;
 
 import org.apache.log4j.Logger;
-
 import com.cucumber.listener.Reporter;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -9,8 +8,7 @@ import pageObjects.LoginPage_POM;
 import utils.ReportLogManager.LogHelper;
 
 public class Login extends LoginPage_POM {
-	private static final Logger l = LogHelper.getLogger(Login.class);
-	public static String currentScenarioName;
+	private Logger l = LogHelper.getLogger(Login.class);
 
 	@Given("User launches application")
 	public void user_launches_application() throws Exception {
@@ -42,5 +40,12 @@ public class Login extends LoginPage_POM {
 	public void justClickOnNothing() throws Throwable {
 
 	}
+	
+	@Then("^user closes driver$")
+	public void userClosesDriver() throws Throwable {
+		closeDriverEngine();
+		Thread.sleep(5000);
+	}
+	
 
 }

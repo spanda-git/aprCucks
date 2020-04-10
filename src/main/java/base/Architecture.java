@@ -1,6 +1,8 @@
-package mercy.base;
+package base;
 
+import java.awt.Desktop;
 import java.io.File;
+import java.net.URI;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -14,25 +16,18 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import com.cucumber.listener.Reporter;
 
-import utils.DataDriver.ConfigFileReader;
 import utils.ReportLogManager.LogHelper;
 
 public class Architecture {
 	public static Properties propConfig;
 	public static WebDriver driver;
-	private static Logger l = LogHelper.getLogger(Architecture.class);
+	private Logger l = LogHelper.getLogger(Architecture.class);
 	private static final String driverPath = "drivers";
 	private static final String htmlConfigPath = "src\\test\\resources\\configFiles\\extent-config.xml";
 	public static Map<String, String> dictObj = new HashMap<String, String>();
 	public static String failedScreenshotPath = "test-output\\Screenshots\\";
 
-	// Constructor
-	public Architecture() {
-		propConfig = ConfigFileReader.ConfigReader();
-		driver = startDriverEngine(propConfig.getProperty("browser").toString());
-	}
-
-	private WebDriver startDriverEngine(String browserType) {
+	public void startDriverEngine(String browserType) {
 		try {
 			if (driver == null) {
 				l.info("Initializing [" + browserType + "] driver server..");
@@ -50,18 +45,31 @@ public class Architecture {
 					l.error(browserType + "-browser type is invalid");
 					throw new Exception(browserType + "-browser type is invalid");
 				}
+				driver.manage().window().maximize();
+			} else {
+				l.info("Working on existing [" + browserType + "] driver server..");
 			}
 		} catch (Exception e) {
 			l.error(e.getMessage());
 			throw new RuntimeException(e.getMessage());
 		}
-		return driver;
 	}
 
-	public void tearDown() {
+	public void closeDriverEngine() {
 		try {
 			driver.quit();
+			driver = null;
 			l.info("Closed all driver processes");
+		} catch (Exception e) {
+			l.error("Exception while closing driver processes." + e.getMessage());
+			throw new RuntimeException(e.getMessage());
+		}
+	}
+
+	public void closeDriver() {
+		try {
+			driver.close();
+			l.info("Closed current focccused driver");
 		} catch (Exception e) {
 			l.error("Exception while closing driver processes." + e.getMessage());
 			throw new RuntimeException(e.getMessage());
@@ -74,10 +82,10 @@ public class Architecture {
 			File f = new File(htmlConfigPath);
 			Reporter.loadXMLConfig(f);
 			Reporter.setSystemInfo("User Name", System.getProperty("user.name"));
-			Reporter.setSystemInfo("Application Name", "TEST");
+			Reporter.setSystemInfo("Application Name", "DEMO");
 			Reporter.setSystemInfo("Operating System Type", System.getProperty("os.name"));
 			Reporter.setSystemInfo("Time Zone", System.getProperty("user.timezone"));
-			Reporter.setSystemInfo("Environment", "Production");
+			Reporter.setSystemInfo("Environment", propConfig.getProperty("environment"));
 			Reporter.setSystemInfo("Selenium", "3.7.0");
 			Reporter.setSystemInfo("Maven", "3.5.2");
 			Reporter.setSystemInfo("Java Version", "1.8.0_151");
@@ -85,6 +93,24 @@ public class Architecture {
 			l.info("Generated HTML report in test-output folder");
 		} catch (Exception e) {
 			l.error("Exception while generating html reports." + e.getMessage());
+			throw new RuntimeException(e.getMessage());
+		}
+	}
+
+	public void popupReport() {
+		try {
+			System.out.println(propConfig.getProperty("displayReportAfterExec"));
+			if (propConfig.getProperty("displayReportAfterExec").trim().equalsIgnoreCase("YES")) {
+				l.info("Trigger HTML report in Browser is set to-YES");
+				Thread.sleep(5000);
+				String extReportPath = System.getProperty("user.dir") + File.separator+ "test-output\\ExtentReport.html";
+				File htmlFile = new File(extReportPath);
+				Desktop.getDesktop().browse(htmlFile.toURI().normalize());
+			} else {
+				l.info("Trigger HTML report in Browser is set to-NO");
+			}
+		} catch (Exception e) {
+			l.error("Exception in triggring report-" + e.getMessage());
 			throw new RuntimeException(e.getMessage());
 		}
 	}

@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 72913042,
+              "duration": 4659170822,
               "status": "passed"
             },
             "match": {
@@ -15,13 +15,13 @@
           }
         ],
         "line": 5,
-        "name": "Login to SSS Application",
+        "name": "first scenario",
         "description": "",
-        "id": "login-to-applicationdsdsd;login-to-sss-application",
+        "id": "feature1;first-scenario",
         "after": [
           {
             "result": {
-              "duration": 581780,
+              "duration": 521181,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 34522691662,
+              "duration": 10160336786,
               "status": "passed"
             },
             "line": 6,
@@ -46,8 +46,8 @@
           },
           {
             "result": {
-              "duration": 863933013,
-              "error_message": "java.lang.AssertionError: page not displayed\r\n\tat stepDefinations.stepDefs.Login.veryify_home_page_displayed(Login.java:28)\r\n\tat ✽.And veryify home page displayed(Login.feature:7)\r\n",
+              "duration": 486757629,
+              "error_message": "java.lang.AssertionError: page not displayed\r\n\tat stepDefinations.stepDefs.Login.veryify_home_page_displayed(Login.java:26)\r\n\tat ✽.And veryify home page displayed(Login.feature:7)\r\n",
               "status": "failed"
             },
             "line": 7,
@@ -74,7 +74,7 @@
         "before": [
           {
             "result": {
-              "duration": 716072,
+              "duration": 1014250,
               "status": "passed"
             },
             "match": {
@@ -83,13 +83,13 @@
           }
         ],
         "line": 10,
-        "name": "Login Creds",
+        "name": "second scenario",
         "description": "",
-        "id": "login-to-applicationdsdsd;login-creds",
+        "id": "feature1;second-scenario",
         "after": [
           {
             "result": {
-              "duration": 444366,
+              "duration": 1290458,
               "status": "passed"
             },
             "match": {
@@ -102,7 +102,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1605534676,
+              "duration": 564438142,
               "status": "passed"
             },
             "line": 11,
@@ -111,13 +111,25 @@
               "location": "Login.user_enters_User_name_and_password()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5666121093,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user closes driver",
+            "match": {
+              "location": "Login.userClosesDriver()"
+            },
+            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Login to Applicationdsdsd",
+    "name": "Feature1",
     "description": "This feature is for login related scenarios",
-    "id": "login-to-applicationdsdsd",
+    "id": "feature1",
     "keyword": "Feature",
     "uri": "Login.feature",
     "tags": [
@@ -134,7 +146,7 @@
         "before": [
           {
             "result": {
-              "duration": 816009,
+              "duration": 3747502972,
               "status": "passed"
             },
             "match": {
@@ -143,13 +155,13 @@
           }
         ],
         "line": 6,
-        "name": "Login to SSS Application fdfsdfdsf",
+        "name": "Scenario1",
         "description": "",
-        "id": "login-to-application;login-to-sss-application-fdfsdfdsf",
+        "id": "feature2;scenario1",
         "after": [
           {
             "result": {
-              "duration": 1152407,
+              "duration": 416320,
               "status": "passed"
             },
             "match": {
@@ -162,7 +174,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10022684524,
+              "duration": 10013770245,
               "status": "passed"
             },
             "line": 7,
@@ -174,7 +186,7 @@
           },
           {
             "result": {
-              "duration": 54876,
+              "duration": 20526,
               "status": "passed"
             },
             "line": 8,
@@ -190,7 +202,7 @@
         "before": [
           {
             "result": {
-              "duration": 1316144,
+              "duration": 912513,
               "status": "passed"
             },
             "match": {
@@ -199,13 +211,13 @@
           }
         ],
         "line": 10,
-        "name": "Login Creds\tfdsfdsfds",
+        "name": "Scenario2",
         "description": "",
-        "id": "login-to-application;login-creds-fdsfdsfds",
+        "id": "feature2;scenario2",
         "after": [
           {
             "result": {
-              "duration": 439012,
+              "duration": 584097,
               "status": "passed"
             },
             "match": {
@@ -218,7 +230,7 @@
         "steps": [
           {
             "result": {
-              "duration": 471122461,
+              "duration": 570620473,
               "status": "passed"
             },
             "line": 11,
@@ -231,143 +243,15 @@
         ]
       }
     ],
-    "name": "Login to Application",
-    "description": "This feature is for login related scenariosgfdgfdg",
-    "id": "login-to-application",
+    "name": "Feature2",
+    "description": "This feature is for random test",
+    "id": "feature2",
     "keyword": "Feature",
     "uri": "Login2.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@Author\u003dSatyajit.panda"
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 537611,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.before(Scenario)"
-            }
-          }
-        ],
-        "line": 5,
-        "name": "Login to SSS Applicationgfgfg",
-        "description": "",
-        "id": "login-to-applicationdsdsd-gfgfg;login-to-sss-applicationgfgfg",
-        "after": [
-          {
-            "result": {
-              "duration": 472027,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.after(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 10010892319,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User launches application",
-            "match": {
-              "location": "Login.user_launches_application()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 375475820,
-              "error_message": "java.lang.AssertionError: page not displayed\r\n\tat stepDefinations.stepDefs.Login.veryify_home_page_displayed(Login.java:28)\r\n\tat ✽.And veryify home page displayed(Login3.feature:7)\r\n",
-              "status": "failed"
-            },
-            "line": 7,
-            "name": "veryify home page displayed",
-            "match": {
-              "location": "Login.veryify_home_page_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "just click on nothing",
-            "match": {
-              "location": "Login.justClickOnNothing()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 424735,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.before(Scenario)"
-            }
-          }
-        ],
-        "line": 10,
-        "name": "Login Credsgfgfd",
-        "description": "",
-        "id": "login-to-applicationdsdsd-gfgfg;login-credsgfgfd",
-        "after": [
-          {
-            "result": {
-              "duration": 559919,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.after(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 493798953,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user enters User name and password",
-            "match": {
-              "location": "Login.user_enters_User_name_and_password()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Login to Applicationdsdsd gfgfg",
-    "description": "This feature is for login related scenarios",
-    "id": "login-to-applicationdsdsd-gfgfg",
-    "keyword": "Feature",
-    "uri": "Login3.feature",
-    "tags": [
-      {
-        "line": 1,
-        "name": "@Author\u003dSatyajit"
+        "name": "@Author\u003dKOUSHIK"
       }
     ]
   }
