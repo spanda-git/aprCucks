@@ -7,19 +7,17 @@ import base.Architecture;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import stepDefinations.stepDefs.Login;
 import utils.DataDriver.ConfigFileReader;
 import utils.ReportLogManager.LogHelper;
 
 public class Hook extends Architecture{
-	private Logger l = LogHelper.getLogger(Login.class);
+	private Logger l = LogHelper.getLogger(Hook.class);
 
 	@Before
 	public void before(Scenario scenario){
 		l.info("******STARTING OF SCENARIO-" + scenario.getName() + "******");
 		propConfig = ConfigFileReader.ConfigReader();
-		startDriverEngine(propConfig.getProperty("browser").toString());
-		System.out.println("driver out"+driver);
+		startDriverEngine(propConfig.getProperty("browser"));
 		
 		for (String tag : scenario.getSourceTagNames()) {
 			if (tag.toLowerCase().contains("author")) {

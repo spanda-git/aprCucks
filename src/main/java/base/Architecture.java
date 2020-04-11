@@ -2,20 +2,16 @@ package base;
 
 import java.awt.Desktop;
 import java.io.File;
-import java.net.URI;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-
 import com.cucumber.listener.Reporter;
-
 import utils.ReportLogManager.LogHelper;
 
 public class Architecture {
@@ -69,7 +65,7 @@ public class Architecture {
 	public void closeDriver() {
 		try {
 			driver.close();
-			l.info("Closed current focccused driver");
+			l.info("Closed current foccused driver");
 		} catch (Exception e) {
 			l.error("Exception while closing driver processes." + e.getMessage());
 			throw new RuntimeException(e.getMessage());
@@ -78,7 +74,7 @@ public class Architecture {
 
 	public void reportGeneration() {
 		try {
-			l.info("Loading Extend Report Configuration...");
+			l.info("Loading Extent-report configuration...");
 			File f = new File(htmlConfigPath);
 			Reporter.loadXMLConfig(f);
 			Reporter.setSystemInfo("User Name", System.getProperty("user.name"));
@@ -99,7 +95,6 @@ public class Architecture {
 
 	public void popupReport() {
 		try {
-			System.out.println(propConfig.getProperty("displayReportAfterExec"));
 			if (propConfig.getProperty("displayReportAfterExec").trim().equalsIgnoreCase("YES")) {
 				l.info("Trigger HTML report in Browser is set to-YES");
 				Thread.sleep(5000);

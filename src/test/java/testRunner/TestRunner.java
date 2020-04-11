@@ -2,7 +2,6 @@ package testRunner;
 
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
-
 import base.Architecture;
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
@@ -18,7 +17,7 @@ public class TestRunner {
 	@AfterClass
 	public static void tearDown() {
 		new Architecture().reportGeneration();
-		new Architecture().closeDriver();
+		new Architecture().closeDriverEngine();
 		new Architecture().popupReport();
 	}
 }

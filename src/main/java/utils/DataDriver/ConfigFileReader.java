@@ -3,11 +3,11 @@ package utils.DataDriver;
 import java.io.FileInputStream;
 import java.util.Properties;
 import org.apache.log4j.Logger;
-import stepDefinations.stepDefs.Login;
+
 import utils.ReportLogManager.LogHelper;
 
 public class ConfigFileReader {
-	private static final Logger l = LogHelper.getLogger(Login.class);
+	private static  Logger l = LogHelper.getLogger(ConfigFileReader.class);
 	private static Properties prop;
 	private static final String propertyFilePath = ".\\src\\test\\resources\\configFiles\\Config.properties";
 
