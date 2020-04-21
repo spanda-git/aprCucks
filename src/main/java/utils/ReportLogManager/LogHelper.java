@@ -1,13 +1,10 @@
 package utils.ReportLogManager;
 
-import java.io.File;
-
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import base.Architecture;
 
-public class LogHelper {
-	private static final String loggerFilePath = ".\\src\\test\\resources\\configFiles" + File.separator
-			+ "log4j.properties";
+public class LogHelper extends Architecture{
 	private static boolean root = false;
 
 	public static Logger getLogger(Class<?> cls) {

@@ -4,6 +4,7 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import org.apache.log4j.Logger;
+import org.apache.poi.ddf.EscherColorRef.SysIndexSource;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
@@ -12,9 +13,9 @@ import org.openqa.selenium.io.FileHandler;
 import base.Architecture;
 import utils.ReportLogManager.LogHelper;
 
-public class WebUtils extends Architecture{
+public class WebUtils extends Architecture {
 	private Logger l = LogHelper.getLogger(Architecture.class);
-	
+
 	public void launchURL(String url) {
 		driver.get(url);
 		l.info("Launching Application url-" + url);
@@ -53,7 +54,18 @@ public class WebUtils extends Architecture{
 		try {
 			String dt = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(new Date());
 			File sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			File destinationPath = new File(Architecture.failedScreenshotPath + dt + ".png");
+
+			File directory = new File(Architecture.ReportPath + "\\Screenshot");
+			if (!directory.exists()) {
+				directory.mkdir();
+				// If you require it to make the entire directory path including
+				// parents,
+				// use directory.mkdirs(); here instead.
+				System.out.println(321);
+			} else {
+				System.out.println(123);
+			}
+			File destinationPath = new File(directory.getPath() +"\\"+ dt + ".png");
 
 			FileHandler.copy(sourcePath, destinationPath);
 			fullScreenshtPath = destinationPath.getAbsolutePath();

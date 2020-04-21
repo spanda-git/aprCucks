@@ -15,27 +15,29 @@ import com.cucumber.listener.Reporter;
 import utils.ReportLogManager.LogHelper;
 
 public class Architecture {
+	private Logger l = LogHelper.getLogger(Architecture.class);
+	// Common References/Objects
 	public static Properties propConfig;
 	public static WebDriver driver;
-	private Logger l = LogHelper.getLogger(Architecture.class);
-	private static final String driverPath = "drivers";
-	private static final String htmlConfigPath = "src\\test\\resources\\configFiles\\extent-config.xml";
 	public static Map<String, String> dictObj = new HashMap<String, String>();
-	public static String failedScreenshotPath = "test-output\\Screenshots\\";
+
+	// Common Paths
+	private static final String driverPath = "drivers\\";
+	private static final String htmlConfigPath = "src\\test\\resources\\configFiles\\extent-config.xml";
+	public static final String loggerFilePath = "src\\test\\resources\\configFiles\\log4j.properties";
+	public static final String ReportPath = "testResult";
 
 	public void startDriverEngine(String browserType) {
 		try {
 			if (driver == null) {
 				l.info("Initializing [" + browserType + "] driver server..");
 				if (browserType.equalsIgnoreCase("chrome")) {
-					System.setProperty("webdriver.chrome.driver",
-							driverPath + "\\chromedriver_win32\\chromedriver.exe");
+					System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver_win32\\chromedriver.exe");
 					ChromeOptions options = new ChromeOptions();
 					options.setPageLoadStrategy(PageLoadStrategy.NONE);
 					driver = new ChromeDriver(options);
 				} else if (browserType.equalsIgnoreCase("ie")) {
-					System.setProperty("webdriver.ie.driver",
-							driverPath + "\\iedriverserver_win32\\IEDriverServer.exe");
+					System.setProperty("webdriver.ie.driver", driverPath + "iedriverserver_win32\\IEDriverServer.exe");
 					driver = new InternetExplorerDriver();
 				} else {
 					l.error(browserType + "-browser type is invalid");
@@ -98,7 +100,8 @@ public class Architecture {
 			if (propConfig.getProperty("displayReportAfterExec").trim().equalsIgnoreCase("YES")) {
 				l.info("Trigger HTML report in Browser is set to-YES");
 				Thread.sleep(5000);
-				String extReportPath = System.getProperty("user.dir") + File.separator+ "test-output\\ExtentReport.html";
+				String extReportPath = System.getProperty("user.dir") + File.separator
+						+ "test-output\\ExtentReport.html";
 				File htmlFile = new File(extReportPath);
 				Desktop.getDesktop().browse(htmlFile.toURI().normalize());
 			} else {

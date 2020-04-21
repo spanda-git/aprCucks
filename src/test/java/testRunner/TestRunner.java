@@ -10,7 +10,8 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features", glue = {
 		"stepDefinations" }, dryRun = false, monochrome = true, snippets = SnippetType.CAMELCASE, plugin = { "pretty",
-				"com.cucumber.listener.ExtentCucumberFormatter:test-output/ExtentReport.html", "json:test-output/cucuJson.json"})
+				"com.cucumber.listener.ExtentCucumberFormatter:" + Architecture.ReportPath + "/ExtentReport.html",
+				"json:" + Architecture.ReportPath + "/cucuJson.json" })
 
 public class TestRunner {
 
