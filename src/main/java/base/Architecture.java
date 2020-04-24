@@ -26,6 +26,7 @@ public class Architecture {
 	private static final String htmlConfigPath = "src\\test\\resources\\configFiles\\extent-config.xml";
 	public static final String loggerFilePath = "src\\test\\resources\\configFiles\\log4j.properties";
 	public static final String ReportPath = "testResult";
+	public static final String dataSheetPath = "C:\\Users\\Satya\\Desktop\\JavaProject\\aprCucks\\src\\test\\resources\\testData\\DataTest.xlsx";
 
 	public void startDriverEngine(String browserType) {
 		try {
@@ -78,6 +79,7 @@ public class Architecture {
 		try {
 			l.info("Loading Extent-report configuration...");
 			File f = new File(htmlConfigPath);
+			Reporter.assignAuthor("MetLife Auto Team");
 			Reporter.loadXMLConfig(f);
 			Reporter.setSystemInfo("User Name", System.getProperty("user.name"));
 			Reporter.setSystemInfo("Application Name", "DEMO");

@@ -3,8 +3,8 @@ package utils.common;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
 import org.apache.log4j.Logger;
-import org.apache.poi.ddf.EscherColorRef.SysIndexSource;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
@@ -23,6 +23,7 @@ public class WebUtils extends Architecture {
 
 	public void setData(WebElement ele, String dataToEnter) throws Exception {
 		try {
+			ele.clear();
 			ele.sendKeys(dataToEnter);
 			if (ele.getAttribute("value").equals(dataToEnter)) {
 				l.info("Enter data [" + dataToEnter + "] in " + ele.toString());

@@ -31,7 +31,7 @@ public class Login extends LoginPage_POM {
 
 	@Then("^user enters User name and password$")
 	public void user_enters_User_name_and_password() throws Throwable {
-		ws.setData(edtloginEmail, "Satyajit");
+		ws.setData(edtloginEmail, dictObj.get("Uname"));
 		ws.setData(edtloginPass, "demo");
 		ws.click(btnLogin);
 	}

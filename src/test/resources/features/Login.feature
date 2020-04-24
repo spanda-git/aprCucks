@@ -1,6 +1,7 @@
-@Author=Satyajit
+@instance1
 Feature: Feature1
 This feature is for login related scenarios
+
 
 Scenario: first scenario
 	Given User launches application 

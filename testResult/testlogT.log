@@ -1,33 +1,45 @@
-04-20-2020 16:33:20 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:18) - ******STARTING OF SCENARIO-first scenario******
-04-20-2020 16:33:20 INFO  [main] utils.DataDriver.ConfigFileReader.ConfigReader(ConfigFileReader.java:22) - Loading Configuration Propeties file..
-04-20-2020 16:33:20 INFO  [main] base.Architecture.startDriverEngine(Architecture.java:33) - Initializing [chrome] driver server..
-04-20-2020 16:33:24 INFO  [main] stepDefinations.stepDefs.Login.user_launches_application(Login.java:15) - step starts
-04-20-2020 16:33:24 INFO  [main] utils.common.WebUtils.launchURL(WebUtils.java:21) - Launching Application url-https://ui.freecrm.com
-04-20-2020 16:33:34 INFO  [main] pageObjects.LoginPage_POM.launchApp(LoginPage_POM.java:29) - Logging into app
-04-20-2020 16:33:35 ERROR [main] stepDefinations.stepDefs.Login.veryify_home_page_displayed(Login.java:24) - page not displayed
-04-20-2020 16:33:35 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:33) - $$$$$$ENDING OF SCENARIO-[STATUS:FAILED]$$$$$$
-04-20-2020 16:33:35 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:18) - ******STARTING OF SCENARIO-second scenario******
-04-20-2020 16:33:35 INFO  [main] base.Architecture.startDriverEngine(Architecture.java:48) - Working on existing [chrome] driver server..
-04-20-2020 16:33:35 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:28) - Enter data [Satyajit] in [[ChromeDriver: chrome on WINDOWS (ea09adb5f531d5bcd0a0a40af6658b49)] -> name: email]
-04-20-2020 16:33:36 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:28) - Enter data [demo] in [[ChromeDriver: chrome on WINDOWS (ea09adb5f531d5bcd0a0a40af6658b49)] -> name: password]
-04-20-2020 16:33:36 INFO  [main] utils.common.WebUtils.click(WebUtils.java:41) - clicked on-[[ChromeDriver: chrome on WINDOWS (ea09adb5f531d5bcd0a0a40af6658b49)] -> xpath: //div[text()='Login']]
-04-20-2020 16:33:36 INFO  [main] base.Architecture.closeDriverEngine(Architecture.java:60) - Closed all driver processes
-04-20-2020 16:33:41 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:33) - $$$$$$ENDING OF SCENARIO-[STATUS:PASSED]$$$$$$
-04-20-2020 16:33:41 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:18) - ******STARTING OF SCENARIO-Scenario1******
-04-20-2020 16:33:41 INFO  [main] base.Architecture.startDriverEngine(Architecture.java:33) - Initializing [chrome] driver server..
-04-20-2020 16:33:45 INFO  [main] stepDefinations.stepDefs.Login.user_launches_application(Login.java:15) - step starts
-04-20-2020 16:33:45 INFO  [main] utils.common.WebUtils.launchURL(WebUtils.java:21) - Launching Application url-https://ui.freecrm.com
-04-20-2020 16:33:55 INFO  [main] pageObjects.LoginPage_POM.launchApp(LoginPage_POM.java:29) - Logging into app
-04-20-2020 16:33:55 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:33) - $$$$$$ENDING OF SCENARIO-[STATUS:PASSED]$$$$$$
-04-20-2020 16:33:55 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:18) - ******STARTING OF SCENARIO-Scenario2******
-04-20-2020 16:33:55 INFO  [main] base.Architecture.startDriverEngine(Architecture.java:48) - Working on existing [chrome] driver server..
-04-20-2020 16:33:56 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:28) - Enter data [Satyajit] in [[ChromeDriver: chrome on WINDOWS (e50061781768fd9ca4dcdaa711479ea0)] -> name: email]
-04-20-2020 16:33:56 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:28) - Enter data [demo] in [[ChromeDriver: chrome on WINDOWS (e50061781768fd9ca4dcdaa711479ea0)] -> name: password]
-04-20-2020 16:33:56 INFO  [main] utils.common.WebUtils.click(WebUtils.java:41) - clicked on-[[ChromeDriver: chrome on WINDOWS (e50061781768fd9ca4dcdaa711479ea0)] -> xpath: //div[text()='Login']]
-04-20-2020 16:33:56 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:33) - $$$$$$ENDING OF SCENARIO-[STATUS:PASSED]$$$$$$
-04-20-2020 16:33:56 INFO  [main] base.Architecture.reportGeneration(Architecture.java:79) - Loading Extent-report configuration...
-04-20-2020 16:33:56 INFO  [main] base.Architecture.reportGeneration(Architecture.java:91) - Generated HTML report in test-output folder
-04-20-2020 16:33:57 INFO  [main] base.Architecture.closeDriverEngine(Architecture.java:60) - Closed all driver processes
-04-20-2020 16:33:57 INFO  [main] base.Architecture.popupReport(Architecture.java:101) - Trigger HTML report in Browser is set to-YES
-04-20-2020 16:34:02 ERROR [main] base.Architecture.popupReport(Architecture.java:111) - Exception in triggring report-Failed to open file:/C:/Users/Satya/Desktop/JavaProject/aprCucks/test-output/ExtentReport.html. Error message: The system cannot find the file specified.
+04-24-2020 14:59:05 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:22) - ******STARTING OF SCENARIO-first scenario******
+04-24-2020 14:59:05 INFO  [main] utils.DataDriver.ConfigFileReader.ConfigReader(ConfigFileReader.java:22) - Loading Configuration Propeties file..
+04-24-2020 14:59:05 INFO  [main] base.Architecture.startDriverEngine(Architecture.java:34) - Initializing [chrome] driver server..
+04-24-2020 14:59:09 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:30) - New Instance found-@instance1
+04-24-2020 14:59:10 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:34) - [Uname=satyajit, Label=instance1, Password=xyz123]
+04-24-2020 14:59:10 INFO  [main] stepDefinations.stepDefs.Login.user_launches_application(Login.java:15) - step starts
+04-24-2020 14:59:10 INFO  [main] utils.common.WebUtils.launchURL(WebUtils.java:21) - Launching Application url-https://ui.freecrm.com
+04-24-2020 14:59:20 INFO  [main] pageObjects.LoginPage_POM.launchApp(LoginPage_POM.java:29) - Logging into app
+04-24-2020 14:59:21 ERROR [main] stepDefinations.stepDefs.Login.veryify_home_page_displayed(Login.java:24) - page not displayed
+04-24-2020 14:59:21 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:47) - $$$$$$ENDING OF SCENARIO-[STATUS:FAILED]$$$$$$
+04-24-2020 14:59:21 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:22) - ******STARTING OF SCENARIO-second scenario******
+04-24-2020 14:59:21 INFO  [main] base.Architecture.startDriverEngine(Architecture.java:49) - Working on existing [chrome] driver server..
+04-24-2020 14:59:21 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:29) - Enter data [satyajit] in [[ChromeDriver: chrome on WINDOWS (55233eb02ae297539b74cf1a6d929ce5)] -> name: email]
+04-24-2020 14:59:22 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:29) - Enter data [demo] in [[ChromeDriver: chrome on WINDOWS (55233eb02ae297539b74cf1a6d929ce5)] -> name: password]
+04-24-2020 14:59:22 INFO  [main] utils.common.WebUtils.click(WebUtils.java:42) - clicked on-[[ChromeDriver: chrome on WINDOWS (55233eb02ae297539b74cf1a6d929ce5)] -> xpath: //div[text()='Login']]
+04-24-2020 14:59:23 INFO  [main] base.Architecture.closeDriverEngine(Architecture.java:61) - Closed all driver processes
+04-24-2020 14:59:28 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:47) - $$$$$$ENDING OF SCENARIO-[STATUS:PASSED]$$$$$$
+04-24-2020 14:59:28 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:22) - ******STARTING OF SCENARIO-Scenario1******
+04-24-2020 14:59:28 INFO  [main] base.Architecture.startDriverEngine(Architecture.java:34) - Initializing [chrome] driver server..
+04-24-2020 14:59:32 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:30) - New Instance found-@instance2
+04-24-2020 14:59:32 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:34) - [Uname=Satyajit Panda, Comments=, Label=instance2, ID=46031205, Gender=Male, Date=Thursday, December 10, 2020]
+04-24-2020 14:59:32 INFO  [main] stepDefinations.stepDefs.Login.user_launches_application(Login.java:15) - step starts
+04-24-2020 14:59:32 INFO  [main] utils.common.WebUtils.launchURL(WebUtils.java:21) - Launching Application url-https://ui.freecrm.com
+04-24-2020 14:59:42 INFO  [main] pageObjects.LoginPage_POM.launchApp(LoginPage_POM.java:29) - Logging into app
+04-24-2020 14:59:42 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:47) - $$$$$$ENDING OF SCENARIO-[STATUS:PASSED]$$$$$$
+04-24-2020 14:59:42 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:22) - ******STARTING OF SCENARIO-Scenario2******
+04-24-2020 14:59:42 INFO  [main] base.Architecture.startDriverEngine(Architecture.java:49) - Working on existing [chrome] driver server..
+04-24-2020 14:59:43 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:29) - Enter data [Satyajit Panda] in [[ChromeDriver: chrome on WINDOWS (78d62c2379fa856d174c18dd8971c77c)] -> name: email]
+04-24-2020 14:59:43 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:29) - Enter data [demo] in [[ChromeDriver: chrome on WINDOWS (78d62c2379fa856d174c18dd8971c77c)] -> name: password]
+04-24-2020 14:59:43 INFO  [main] utils.common.WebUtils.click(WebUtils.java:42) - clicked on-[[ChromeDriver: chrome on WINDOWS (78d62c2379fa856d174c18dd8971c77c)] -> xpath: //div[text()='Login']]
+04-24-2020 14:59:43 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:47) - $$$$$$ENDING OF SCENARIO-[STATUS:PASSED]$$$$$$
+04-24-2020 14:59:43 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:22) - ******STARTING OF SCENARIO-Scenario123******
+04-24-2020 14:59:43 INFO  [main] base.Architecture.startDriverEngine(Architecture.java:49) - Working on existing [chrome] driver server..
+04-24-2020 14:59:43 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:30) - New Instance found-@instance3
+04-24-2020 14:59:43 INFO  [main] stepDefinations.cucuHook.Hook.before(Hook.java:34) - [Uname=ROMA, Comments=, Label=instance3, ID=46031205, Gender=Male, Date=Thursday, December 10, 2020]
+04-24-2020 14:59:43 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:29) - Enter data [ROMA] in [[ChromeDriver: chrome on WINDOWS (78d62c2379fa856d174c18dd8971c77c)] -> name: email]
+04-24-2020 14:59:43 INFO  [main] utils.common.WebUtils.setData(WebUtils.java:29) - Enter data [demo] in [[ChromeDriver: chrome on WINDOWS (78d62c2379fa856d174c18dd8971c77c)] -> name: password]
+04-24-2020 14:59:43 INFO  [main] utils.common.WebUtils.click(WebUtils.java:42) - clicked on-[[ChromeDriver: chrome on WINDOWS (78d62c2379fa856d174c18dd8971c77c)] -> xpath: //div[text()='Login']]
+04-24-2020 14:59:43 INFO  [main] stepDefinations.cucuHook.Hook.after(Hook.java:47) - $$$$$$ENDING OF SCENARIO-[STATUS:PASSED]$$$$$$
+04-24-2020 14:59:43 INFO  [main] base.Architecture.reportGeneration(Architecture.java:80) - Loading Extent-report configuration...
+04-24-2020 14:59:43 INFO  [main] base.Architecture.reportGeneration(Architecture.java:93) - Generated HTML report in test-output folder
+04-24-2020 14:59:45 INFO  [main] base.Architecture.closeDriverEngine(Architecture.java:61) - Closed all driver processes
+04-24-2020 14:59:45 INFO  [main] base.Architecture.popupReport(Architecture.java:103) - Trigger HTML report in Browser is set to-YES
+04-24-2020 14:59:51 ERROR [main] base.Architecture.popupReport(Architecture.java:113) - Exception in triggring report-Failed to open file:/C:/Users/Satya/Desktop/JavaProject/aprCucks/test-output/ExtentReport.html. Error message: The system cannot find the file specified.
 
